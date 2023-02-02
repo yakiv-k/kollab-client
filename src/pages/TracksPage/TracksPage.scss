@@ -1,0 +1,9 @@
+@use "../../styles/partials/mixins" as *;
+
+.tracks {
+    background: linear-gradient(to bottom, #05031D 55%, #C0AAD3 100%);
+    width: 100%;
+    @include desktop {
+        background: linear-gradient(to bottom, #05031D 21%, #C0AAD3 100%);
+    }
+}

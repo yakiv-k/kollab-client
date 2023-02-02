@@ -1,0 +1,26 @@
+@use "../../styles/partials/mixins" as *;
+
+.login {
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #05031d 55%, #c0aad3 100%);
+  width: 100%;
+  @include tablet {
+    padding: 3rem 5rem;
+  }
+  @include desktop {
+    padding: 2rem 9rem;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  &__title {
+    color: #fff;
+    font-size: 3rem;
+  }
+}
+
+.form {
+  &__label {
+    margin-bottom: 0.5rem;
+  }
+}

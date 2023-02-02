@@ -1,0 +1,163 @@
+@use "../../styles/partials/mixins" as *;
+
+.header {
+  background-color: #576490;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.25rem 4rem;
+  &__title {
+    margin: 0;
+    font-size: 1.25rem;
+    @include tablet {
+      font-size: 1.75rem;
+    }
+  }
+  &__menu-division {
+    background-color: #576490;
+
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  &__menu {
+    margin-left: 3rem;
+    font-size: 1.75rem;
+    background: none;
+  }
+}
+
+.nav {
+  &__sidebar {
+    background-color: #576490;
+
+    width: 135px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    transition: 850ms;
+    &--active {
+      left: 93%;
+      transition: 350ms;
+    }
+  }
+  &__sidebar-icons {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 3.25rem;
+    &--close {
+      margin-left: 6rem;
+      margin-top: 0.75rem;
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+  }
+  &__sidebar-logout {
+    margin-top: 30rem;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+// .nav-menu.active {
+//   left: 0;
+//   transition: 350ms;
+// }
+// .header {
+//   background-color: #576490;
+//   color: #fff;
+//   display: flex;
+//   justify-content: start;
+//   @include desktop {
+//     margin: 0 auto;
+//     width: 100%;
+//     padding: 0;
+//   }
+
+//   &__menu-button {
+//     width: 2.25rem;
+//     height: 2.25rem;
+//     margin: 1.5rem 2rem;
+//   }
+//   &__menu-toggle {
+//     background-color: #576490;
+//     width: 100%;
+//     height: 80px;
+//     display: flex;
+//     justify-content: start;
+//     align-items: center;
+//   }
+// }
+
+// .nav {
+//   &__menu {
+//     background-color: #576490;
+//     width: 100px;
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     position: fixed;
+//     top: 0;
+//     left: -100%;
+//     transition: 850ms;
+//     &--active {
+//       left: 0;
+//       transition: 250ms;
+//     }
+//   }
+
+//   &__icons {
+//     width: 2rem;
+//     height: 2rem;
+//     margin-top: 1.5rem;
+//   }
+// }
+
+// .nav {
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 1rem;
+//   @include desktop {
+//     max-width: 98rem;
+//     margin: 0 auto;
+//     padding: 1.25rem 0;
+//   }
+//   &__title {
+//   margin: 0;
+//   font-size: 1.25rem;
+//   @include tablet {
+//     font-size: 1.75rem;
+//   }
+// }
+//   &__links-division {
+//     display: flex;
+//     gap: 0.5rem;
+//   }
+//   &__links,
+//   &__links-pipe {
+//     margin: 0;
+//     display: flex;
+//     align-items: center;
+//     font-weight: 600;
+//     font-size: 0.75rem;
+//     @include tablet {
+//       font-size: 0.9rem;
+//     }
+//   }
+//   &__links {
+//     &:hover {
+//       transition: 0.25s;
+//       transform: translateY(-0.25rem);
+//     }
+//   }
+// }

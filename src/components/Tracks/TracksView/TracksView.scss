@@ -1,0 +1,144 @@
+@use "../../../styles/partials/mixins" as *;
+
+.tracksview-container {
+  background: linear-gradient(to bottom, #05031d 55%, #c0aad3 100%);
+}
+
+.tracksview {
+  width: 100%;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  @include tablet {
+    padding: 2rem 5rem;
+  }
+  @include desktop {
+    padding: 2rem 9rem;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  &__waveform {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e1e1e1;
+    display: flex;
+    justify-content: space-between;
+    @include tablet {
+      padding-bottom: 1.5rem;
+    }
+  }
+  &__heading {
+    color: #fff;
+    @include tablet {
+      font-size: 2.25rem;
+    }
+    @include desktop {
+      font-size: 3rem;
+      margin: 2rem auto;
+    }
+  }
+  &__image {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    border-radius: 50%;
+    margin-top: 0.95rem;
+    object-fit: cover;
+    @include tablet {
+      width: 4rem;
+      height: 4rem;
+      margin-left: 1rem;
+    }
+    @include desktop {
+      width: 7rem;
+      height: 7rem;
+      margin-left: 2rem;
+      margin-top: -0.5rem;
+    }
+  }
+  &__selected {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    border-radius: 0.25rem;
+    @include tablet {
+      padding: 1.75rem 2rem;
+    }
+  }
+  &__details-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+  }
+  &__details {
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  &__content {
+    margin: 0;
+    font-size: 0.6875rem;
+    @include tablet {
+      font-size: 0.75rem;
+    }
+    @include desktop {
+      font-size: 1rem;
+    }
+  }
+  &__title {
+    margin: 0;
+    width: 33%;
+    font-size: 0.875rem;
+    font-weight: 600;
+    @include tablet {
+      width: 38%;
+      font-size: 1rem;
+    }
+    @include desktop {
+      font-size: 1.125rem;
+    }
+  }
+  &__icon {
+    width: 1.125rem;
+    margin-bottom: 0.75rem;
+    &:hover {
+      cursor: pointer;
+    }
+    @include tablet {
+      width: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+.stems {
+  &__title {
+    margin: 1rem 0 0 0;
+    font-size: 1.25rem;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+    @include desktop {
+      font-size: 1.75rem;
+    }
+  }
+  &__files-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &__file {
+    font-size: 0.85rem;
+    width: 100%;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f1f1f1;
+    border-radius: 0.1875rem;
+    text-decoration: none;
+    color: #05031d;
+    @include tablet {
+      padding: 0.75rem 0;
+    }
+    @include desktop {
+      font-size: 1.125rem;
+    }
+  }
+}
