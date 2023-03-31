@@ -28,6 +28,11 @@ function Login({ login, loginError, error }) {
               <button className="form__button" type="submit">
                 Login
               </button>
+              <div className="form_guest guest">
+                <p className="guest__title">Guest Login:</p>
+                <p className="guest__text">username: yakiv.yyz@gmail.com</p>
+                <p className="guest__text">password: password</p>
+              </div>
             </animated.form>
           ) : (
             ""
