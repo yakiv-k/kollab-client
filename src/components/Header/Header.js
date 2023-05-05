@@ -24,7 +24,6 @@ function Header() {
             <h1 className="header__title">Kollab.</h1>
           </Link>
         </div>
-
         <div className="header__menu-division">
           <Link to="#" className="header__menu">
             <FaIcons.FaBars
