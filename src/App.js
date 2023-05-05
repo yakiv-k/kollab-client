@@ -6,7 +6,6 @@ import TracksView from "./components/Tracks/TracksView/TracksView";
 import ProducerPage from "./pages/ProducerPage/ProducerPage";
 import UploadPage from "./pages/UploadPage/UploadPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
-
 import "./styles/App.scss";
 
 const authUrl1 = "https://web-production-5250.up.railway.app";
@@ -16,7 +15,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {/* {window.location.href !== authUrl1 && window.location.href !== authUrl2 && <Header />} */}
 
         <Switch>
           <Route path="/" exact component={HomePage}></Route>

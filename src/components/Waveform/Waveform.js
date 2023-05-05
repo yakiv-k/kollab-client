@@ -29,7 +29,7 @@ export default function Waveform({ url, toggleLike, clickedId, likedValue }) {
 
   const [liked, setLiked] = useState(likedValue);
 
-  const toggleClass = (likedValue, idValue) => {
+  const toggleClass = (idValue) => {
     let likedBool = 0;
 
     if (liked == 1) {
