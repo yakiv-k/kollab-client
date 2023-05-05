@@ -5,7 +5,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1.25rem 4rem;
+  padding: 1.25rem 1rem;
+  @include tablet {
+    padding: 1.25rem 4rem;
+  }
   &__title {
     margin: 0;
     font-size: 1.25rem;

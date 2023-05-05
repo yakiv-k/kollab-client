@@ -24,21 +24,18 @@ function Signup({ signUp, registered, handleImage }) {
               className="signup__form form"
               onSubmit={signUp}
             >
-              <label className="form__label">Name:</label>
               <input
                 className="form__input"
                 type="text"
                 name="name"
                 placeholder="Enter a name"
               />
-              <label className="form__label">Contact:</label>
               <input
                 className="form__input"
                 type="text"
                 name="contact"
                 placeholder="Enter a number/email"
               />
-
               <label className="form__label">Add image</label>
               <input
                 className="form__input form__input--padding"
@@ -47,16 +44,14 @@ function Signup({ signUp, registered, handleImage }) {
                 id="image"
                 accept=".jpeg, .jpg, .png"
                 onChange={handleImage}
+                placeholder="Choose a display picture"
               ></input>
-
-              <label className="form__label">Username:</label>
               <input
                 className="form__input"
                 type="text"
                 name="username"
                 placeholder="Enter a username"
               />
-              <label className="form__label">Password: </label>
               <input
                 className="form__input"
                 type="password"

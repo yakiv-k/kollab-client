@@ -54,11 +54,15 @@
     border: 1px solid #e1e1e1;
     border-radius: 0.25rem;
     padding: 0.45rem;
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
     @include tablet {
       margin-bottom: 1.75rem;
     }
     &:focus {
       outline: 0.25px solid #afafaf;
+      border: none;
+      border-bottom: 1px solid #e1e1e1;
     }
     &--padding {
       padding: 0.5rem 0.5rem 1rem 0.5rem;
@@ -73,6 +77,8 @@
     color: #fff;
     font-size: 0.75rem;
     font-weight: 700;
+    cursor: pointer;
+
     @include tablet {
       height: 2.5rem;
       font-size: 1rem;

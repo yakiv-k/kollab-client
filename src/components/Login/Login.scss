@@ -17,17 +17,37 @@
     color: #fff;
     font-size: 3rem;
   }
+  &__redirect {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    justify-content: space-around;
+    gap: 0.5rem;
+  }
+  &__text {
+    font-weight: 300;
+  }
+  &__link {
+    color: #a88bc1;
+    cursor: pointer;
+  }
 }
 
 .form {
   &__label {
     margin-bottom: 0.5rem;
   }
+  &__input {
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
+  }
 }
 
 .guest {
-  margin-top: 2rem;
-  font-size: 14px;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  color: #474545;
   &__title {
     margin: 0 0 0.5rem 0;
     text-decoration: underline;

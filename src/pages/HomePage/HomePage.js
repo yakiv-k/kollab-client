@@ -8,7 +8,7 @@ const signupUrl = `https://web-production-5250.up.railway.app/signup`;
 
 class HomePage extends Component {
   state = {
-    isSignedUp: false,
+    isSignedUp: true,
     isLoggedIn: false,
     isLoginError: false,
     errorMessage: "",
@@ -65,11 +65,18 @@ class HomePage extends Component {
     );
   }
 
+  handleRedirect = () => {
+    this.setState({
+      isSignedUp: false,
+    });
+  }
+
   renderLogin = () => {
     const { isLoginError, errorMessage } = this.state;
     return (
       <Login
         login={this.handleLogin}
+        redirect={this.handleRedirect}
         loginError={isLoginError}
         error={errorMessage}
       />

@@ -31,11 +31,6 @@
   border-radius: 2px;
   margin-bottom: 1rem;
   padding: 1rem;
-  // &:hover {
-  //   transition: 0.25s;
-  //   transform: translateY(-0.25rem);
-  //   // background-color: #05031d;
-  // }
   @include tablet {
     margin-bottom: 2.5rem;
     padding: 3rem 2.25rem 1.5rem 2.25rem;
@@ -71,6 +66,12 @@
   &__content {
     display: flex;
     justify-content: space-between;
+    @include tablet {
+      gap: 1.4rem;
+    }
+    @include desktop {
+      gap: 0;
+    }
   }
   &__container {
     display: flex;
@@ -97,7 +98,7 @@
   }
   &__text {
     margin: 0;
-    font-size: 0.65rem;
+    font-size: 0.55rem;
     color: #05031d;
     margin-bottom: 0.25rem;
     @include tablet {
